@@ -47,8 +47,8 @@ else: #if a filename was input
         path_ext = pathlib.Path(file).suffix
 
         if path_ext.lower() == '.mp3': # Convert to WAV
-            sound = AudioSegment.from_mp3("/path/to/file.mp3")
-            sound.export("/output/path/file.wav", format="wav")
+            sound = AudioSegment.from_mp3(file)
+            sound.export(f'{file}.wav', format="wav")
 
 
         with sr.AudioFile(file) as source:
