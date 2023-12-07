@@ -1,0 +1,103 @@
+P.2. Text Extraction and Processing for Images, PDFs, and Speech Data 367
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+23
+
+24
+
+25
+
+27
+
+28
+
+29
+
+30
+
+31
+
+32
+
+33
+
+34
+
+35
+
+36
+
+37
+
+'An Example
+
+1
+|
+|
+_____________ _I
+
+pdfim2text
+
+#!/usr/bin/python
+
+import pytesseract
+
+from pdf2image import convert_from_path
+from PIL import Image
+
+from gtts import gTTS
+
+from playsound import playsound
+
+import os, pathlib, glob
+
+def takeInput():
+pmode = O;
+IN = input("Enter a pdf or an image: ")
+if os.path.isfile(IN):
+path_stem = pathlib.Path(IN).stem
+path_ext = pathlib.Path(IN).suffix
+if path_ext.lower() == '.pdf': pmode=1
+else:
+exit ()
+return IN, path_stem, pmode
+
+def pdf2txt(IN):
+# you have to complete the function appropriately
+return 'For pdf2txt, you may save the text here without return.'
+
+def im2txt (IN):
+# you have to complete the function appropriately
+return 'For im2txt, try to return the text to play'
+
+if __name__ == '__main__":
+IN, path_stem, pmode = takeInput()  #pmode=0:image; pmode=1:pdf
+if pmode:
+txt = pdf2txt(IN)
+else:
+txt = im2txt (IN)
+
+audio = gTTS(text=txt, lang="en", slow=False);
+WAV = '0000_tmp.wav'; audio.save(WAV);
+playsound (WAV); os.remove (WAV)

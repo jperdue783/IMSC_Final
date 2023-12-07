@@ -1,0 +1,61 @@
+368
+
+Appendix P. Projects
+
+What to Do
+
+First download Image-Speech-Text-Processing.PY.tar.
+
+Untar it to see the file pdf im2text and some example codes in the direc-
+
+tory example-code.
+
+1. Complete pdfim2text appropriately.
+
+* You may find clues from example-code/pdf2txt.py
+
+2. Implement speech2text from the scratch.
+
+* You may get hints from speech_mic2wave.py and image2text.py
+
+in the directory example-code.
+
+Try to put all functions into a single file for each command, which en-
+
+hances portability of the commands.
+
+—_— — —_— —_— — = =
+
+Report
+
+* Work in a directory, of which the name begins with your last name.
+
+* Use the three-page project document as an example for pdf im2text.
+
+* zip or tar your work directory and submit via email.
+
+* Write a report to explain what you have done, including images and
+
+wave files; upload it to Canvas.
+
+PDF-Image to Texts
+
+As a part of the project,
+
+you will develop a Python program
+
+Happy Fish
+
+that can extract texts from
+
+PDF files and images:
+
+and generally,
+
+from PDF files including images.
+
+An example PDF is
+
+the one you are reading now.
+
+(This portion is an image, by text2image.py.)
